@@ -1,0 +1,38 @@
+non_negotiable_etiquette
+To read
+Solid Dry Kiss Yagni — Engineering Principles
+KISS and YAGNI
+https://en.m.wikipedia.org/wiki/Actor_model
+What year did Bezos issue the API Mandate at Amazon?
+The pragmatic programmer
+Clean code
+Code Complete 2
+https://news.ycombinator.com/item?id=12572859
+https://news.ycombinator.com/item?id=12508655
+https://12factor.net/
+https://samnewman.io/patterns/architectural/bff/
+https://datatracker.ietf.org/doc/html/rfc2616
+https://github.com/microsoft/api-guidelines
+OAuth 2.0 and open connect
+https://serversforhackers.com/c/nginx-multi-tenancy
+Varnish Cache
+ESLint for TypeScript
+Code Hygine
+Code sanity is important because I am a big believer of Broken Window Theory.
+
+A repo should have proper README.md file. Please refer to SAMPLE_README.md file.
+Please refer to language styling guide in entire project. In case of JavaScript, refer to this: https://github.com/airbnb/javascript
+Strictly follow 12factor
+For the development of API client, we will follow Microsoft API guidelines.
+Every 2 months, we will have code triage sessions.
+I heavily encourage Pair programming, according to Xtreme Programming framework. Did wonders for me personally.
+Follow TDD always.
+We always need to run at 12/12 on Joel Test.
+A repo should contain linter, pre-commit hook, proper README with every step. It should be built by running command. Should be dockerized completely by running a command. More on other post.
+Code coverage can't be decreased more then 98%
+Pre commit code should: validate commmit message, run the lint, should test the code, coverage should be more then 98%. If any of the condition is false. Code will not be commited.
+Failing commit could never be pushed to master branch.
+Once we have a boilerplate code, it's CI needs to be implemented. Code should be pushed to integration and production only by running pipeline.
+NO MANUAL DEPLOY USING FTP, SSH OR WHATSOEVER.
+If a piece of code is not tested. It will be removed. Won't be able to make it to production.
+Please refer to this code base. This is what I call a great repo.: https://github.com/forem/forem
